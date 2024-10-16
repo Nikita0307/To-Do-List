@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo приложение</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    
+    <header> 
+        <div class="header_container">
+            <h1>ToDo приложение</h1>
+            <h2 class="today_tasks">список задач на сегодня</h2>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="empty_">
+            <div class="empty_list">
+                <img src="img/leaf.png" alt="leaf" class="empty_list_img" width="50">
+                <div class="empty_list_text">Список дел пуст</div>
+            </div>
+        </section>
+
+        <section class="tasks active">
+            <div class="tasks_container">
+            </div>
+    </section>
+
+    <section class="new_tasks">
+        <div class="new_tasks_container">
+            <h3 class="new_tasks_header">Добавить новую задачу</h3>
+                <form class="input_form">
+                    <div class="new_tasks_input">
+                        <input type="text" id="taskInput" class="input_text" placeholder="Текст задачи" name="text" value="" required>
+                        <div class="text_container"><span class="text_below_input">Что делаем, сколько времени тратим, какой результат получаем.</span></div>
+                    </div>
+                    <button type="submit" class="add_btn" id="addTask"> 
+                            Добавить
+                    </button>
+                    <button type="button" id="dellAllTask" class="del_all_tasks_btn"> Удалить все задачи</button>
+                    <button type="button" id="dellAllDoneTask" class="del_all_tasks_btn"> Удалить все выполненные задачи</button>
+                </form>
+        </div>
+    </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
